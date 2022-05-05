@@ -1,0 +1,31 @@
+{
+  "containers": [
+    {
+      "name": "wxcloudrun-express-main",
+      "domain": "https://express-44g1-1849520-1311410202.ap-shanghai.run.tcloudbase.com/",
+      "ip": "10.0.224.17",
+      "containerId": ""
+    }
+  ],
+  "config": {
+    "wxcloudrun-express-main": {
+      "containerPort": 80,
+      "dockerfilePath": "Dockerfile",
+      "buildDir": "",
+      "minNum": 0,
+      "maxNum": 5,
+      "cpu": 1,
+      "mem": 2,
+      "policyType": "cpu",
+      "policyThreshold": 80,
+      "envParams": {},
+      "customLogs": "stdout",
+      "initialDelaySeconds": 2,
+      "dataBaseName": "nodejs_demo",
+      "executeSQLs": [
+        "CREATE DATABASE IF NOT EXISTS nodejs_demo;",
+        "USE nodejs_demo;"
+      ]
+    }
+  }
+}
